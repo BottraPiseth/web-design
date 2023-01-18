@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Source San Pro', sans-serif;
+    background-color:  #ffffff;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    
+}
+section{
+    width: 80%;
+    margin: auto;
+}
+
+.header-nav{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    max-height: 10vh;
+    /* max-width: 10vh; */
+} 
+ #logo{
+    font-family: sans-serif;
+    font-weight: bold;
+    flex: 1;
+    
+} 
+#logo a{
+    font-family: 'Cabin', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(14, 0, 0);
+    font-weight: bold;
+}
+.header-nav {
+   height: 10vh;
+}
+ .header-nav ul{
+    flex:0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.header-nav ul li{
+    list-style: none;
+}
+.header-nav ul li a{
+    color: rgb(118, 115, 115);  
+}
+.header-nav ul li #home{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.header-nav ul li a:hover{
+    color: rgb(0, 0, 0); 
+    transition: 0.5s; 
+}
+#home{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+#download-now{
+    padding: 1rem 1.5rem;
+    background-color:blue;
+    border-radius: 2rem;
+    color: rgb(255, 196, 0);  
+}
+#download-now:hover{
+    padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid blue;
+    border-radius: 2rem;
+    
+    color:  rgb(0, 0, 91);
+    transition: .0.5s; 
+}
+/* grobla style */
+
+
+.main-section{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-section img{
+    height: 50rem;
+    width: 70rem ;
+}
+h4{
+    color:rgb(188, 144, 0);
+    font-size:.7rem ;
+    background-color:rgba(255, 196, 0, 0.219) ;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    font:bold;
+    width: 12.5rem;
+
+}
+h2{
+    font-size:3rem ;
+    color:rgb(43, 0, 255);
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+
+}
+h3{
+    font-size:1.5rem ;
+    font-weight: 150;
+    color: rgb(118, 115, 115);  
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+}
+ .btn-wapper{
+    margin-top: 1.5rem;
+ }
+ button{
+    padding: 1rem 1.5rem;
+    background-color:blue;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);  
+ }
+button:hover{
+    padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    color:  rgb(0, 0, 91);
+    transition: .0.5s; 
+    cursor: pointer;
+}
+/* end section */
+/* new section */
+.features-section{
+    height: 100vh;
+    margin-top: 10rem;
+}
+.features{
+    /* groble style */
+    display: flex;
+    flex-direction: column;
+    text-justify: center;
+    align-items: center;
+    
+}
+.features-4{
+    text-align: center;
+    width: 40rem;
+}
+.features-h3{
+    text-align: center;
+    width: 60rem;
+}
+.features-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features-card{
+    text-align: center;
+    width: 30%;
+    margin-top: 5rem;
+}
+/* icon */
+
+.fa-sharp {
+    font-size: 2rem;
+}
+.features-card-h5{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+.features-card-h3{
+    font-size:1.5rem ;
+    font-weight: 150;
+    color: rgb(118, 115, 115);  
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+}
+/* js */
+.fa-solid {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.blackMode{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.modeColor{
+    color: rgb(245, 221, 221);
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+    /* section 1 */
+    #logo a{
+        font-size: 1.5rem;
+        
+    } 
+    .header-nav ul {
+      display: none; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .main-section{
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+    .main-section img{
+        height: 20rem;
+        width: 30rem ;
+    }
+    /* section2 */
+    .features-section{
+        height: 50vh;
+        margin: auto;
+    }
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+     .features-card{
+        
+        width: 100%;
+        margin: auto;
+    } 
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .features-wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px) {
+    /* section 1 */
+    #logo a{
+        font-size: 1.5rem;
+        
+    } 
+    .header-nav ul {
+      display: none; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .main-section{
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+    .main-section img{
+        height: 20rem;
+        width: 30rem ;
+    }
+    /* section2 */
+    .features-section{
+        height: 50vh;
+        margin: auto;
+    }
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+     .features-card{
+        
+        width: 100%;
+        margin: auto;
+    } 
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .features-wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* section 1 */
+    #logo a{
+        font-size: 1.5rem;
+        
+    } 
+    .header-nav ul {
+      display: none; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .main-section{
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+    .main-section img{
+        height: 20rem;
+        width: 30rem ;
+    }
+    /* section2 */
+    .features-section{
+        height: 50vh;
+        margin: auto;
+    }
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+     .features-card{
+        
+        width: 100%;
+        margin: auto;
+    } 
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .features-wrapper{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 300px) {
+    /* section 1 */
+    #logo a{
+        font-size: 1.5rem;
+        
+    } 
+    .header-nav ul {
+      display: none; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .main-section{
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+    .main-section img{
+        height: 20rem;
+        width: 30rem ;
+    }
+    /* section2 */
+    .features-section{
+        height: 50vh;
+        margin: auto;
+    }
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+     .features-card{
+        
+        width: 100%;
+        margin: auto;
+    } 
+    .features-h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .features-wrapper{
+        flex-direction: column;
+    }
+
+}
